@@ -51,8 +51,10 @@ docker-compose down
 
 Após rodar o Docker o aplicação estará disponível no link: http://localhost:4200
 
-Ao rodar  a aplicação, irá rodar o migratio , criando toda a estrutuda de banco de dados.
+Ao rodar  a aplicação, irá rodar o migration , criando toda a estrutuda de banco de dados.
+
 Usuário padrão inicial da aplicação:
+
   email :admin@funcinbev.com,
   senha :Admin@123
 
@@ -63,7 +65,7 @@ Usuário padrão inicial da aplicação:
 Após rodar o Docker, a API estará disponível em:
 
 ```
-http://localhost:7104
+http://localhost:5000
 ```
 
 Se desejar rodar a API manualmente (fora do Docker), execute os seguintes comandos dentro da pasta **backend/API/FuncInbev.API**:
@@ -81,9 +83,9 @@ dotnet run
 
 A API estará rodando e acessível em:
 ```
-http://localhost:7104/swagger
+http://localhost:5000/swagger
 ```
-📌 O **Swagger** estará disponível para testar os endpoints.
+📌 O **Swagger** estará disponível para testar os endpoints apenas localmente ao rodar a plicação
 
 ---
 
