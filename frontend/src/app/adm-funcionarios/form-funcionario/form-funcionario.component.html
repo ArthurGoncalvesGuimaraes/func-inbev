@@ -13,36 +13,40 @@
           </mat-option>
         </mat-select>
       </mat-form-field>
-      
+      <div class="row">
       <!-- Nome e Sobrenome -->
-
-        <mat-form-field class="full-width">
-          <mat-label>Nome</mat-label>
-          <input matInput formControlName="nome" required />
-          <mat-error *ngIf="userForm.get('nome')?.hasError('required')">Nome é obrigatório</mat-error>
-        </mat-form-field>
-        <mat-form-field class="full-width">
-          <mat-label>Sobrenome</mat-label>
-          <input matInput formControlName="sobrenome" required />
-          <mat-error *ngIf="userForm.get('sobrenome')?.hasError('required')">Sobrenome é obrigatório</mat-error>
-        </mat-form-field>
-
-      <!-- Data de Nascimento -->
-      <mat-form-field class="full-width">
-        <mat-label>Data de Nascimento</mat-label>
-        <input matInput [matDatepicker]="picker" formControlName="dataNascimento" required />
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-        <mat-error *ngIf="userForm.get('dataNascimento')?.hasError('required')">Data de nascimento é obrigatória</mat-error>
-        <mat-error *ngIf="userForm.get('dataNascimento')?.hasError('menorDeIdade')">Você precisa ser maior de idade</mat-error>
+      <mat-form-field class="col-6">
+        <mat-label>Nome</mat-label>
+        <input matInput formControlName="nome" required />
+        <mat-error *ngIf="userForm.get('nome')?.hasError('required')">Nome é obrigatório</mat-error>
       </mat-form-field>
-      <!-- Número de Documento -->
-      <mat-form-field class="full-width">
-        <mat-label>Número de Documento</mat-label>
-        <input matInput formControlName="numeroDocumento" required />
-        <mat-error *ngIf="userForm.get('numeroDocumento')?.hasError('required')">Número de documento é obrigatório</mat-error>
-
+      <mat-form-field class="col-6">
+        <mat-label>Sobrenome</mat-label>
+        <input matInput formControlName="sobrenome" required />
+        <mat-error *ngIf="userForm.get('sobrenome')?.hasError('required')">Sobrenome é obrigatório</mat-error>
       </mat-form-field>
+
+      </div>
+
+        <div class="row">
+          <!-- Data de Nascimento -->
+          <mat-form-field class="col-6">
+            <mat-label>Data de Nascimento</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="dataNascimento" required />
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-error *ngIf="userForm.get('dataNascimento')?.hasError('required')">Data de nascimento é obrigatória</mat-error>
+            <mat-error *ngIf="userForm.get('dataNascimento')?.hasError('menorDeIdade')">Você precisa ser maior de idade</mat-error>
+          </mat-form-field>
+          <!-- Número de Documento -->
+          <mat-form-field class="col-6">
+            <mat-label>Número de Documento</mat-label>
+            <input matInput formControlName="numeroDocumento" required />
+            <mat-error *ngIf="userForm.get('numeroDocumento')?.hasError('required')">Número de documento é obrigatório</mat-error>
+
+          </mat-form-field>
+        </div>
+
 
       <!-- Nome do Gerente -->
       <mat-form-field class="full-width">

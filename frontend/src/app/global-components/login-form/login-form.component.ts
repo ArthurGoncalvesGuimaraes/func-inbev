@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { AuthRepository } from '../../../data/auth/auth.repository';
 import { AuthService } from '../../../domain/utils/services/auth.service';
 import { Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material/snack-bar';
 @Component({
   selector: 'app-login-form',
   imports: [
@@ -31,7 +32,9 @@ import { Router } from '@angular/router';
 export class LoginFormComponent {
   loginForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private datePipe: DatePipe,
+  constructor(
+    private snackBar: MatSnackBar,
+    private fb: FormBuilder, private datePipe: DatePipe,
     private authRepository: AuthRepository,
     private authService: AuthService,
     private router: Router
@@ -56,13 +59,20 @@ export class LoginFormComponent {
       next: response => {
         console.log('Login efetuado com sucesso', response);
         // Armazena o token JWT no LocalStorage
-        localStorage.setItem('token', response.token);
-        localStorage.setItem('user', JSON.stringify(response.user));
-
-        // Atualiza o usuário atual no AuthService usando o BehaviorSubject
-        this.authService.setCurrentUser(response.user);
-        // Redireciona para a página restrita (exemplo: lista de funcionários)
-        this.router.navigate(['/funcionarios']);
+        if(response.token != null){
+          localStorage.setItem('token', response.token);
+          localStorage.setItem('user', JSON.stringify(response.user));
+          // Atualiza o usuário atual no AuthService usando o BehaviorSubject
+          this.authService.setCurrentUser(response.user);
+          // Redireciona para a página restrita (exemplo: lista de funcionários)
+          this.router.navigate(['/funcionarios']);
+        }else{
+          this.snackBar.open('Usuário ou senha inválida', 'Fechar', {
+            duration: 5000,
+            horizontalPosition: 'center', 
+            verticalPosition: 'top' 
+          });
+        }
       },
       error: err => {
         // Trata erro de login (ex: mostrar mensagem de credenciais inválidas)

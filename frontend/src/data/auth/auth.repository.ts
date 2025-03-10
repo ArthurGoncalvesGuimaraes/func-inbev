@@ -10,7 +10,7 @@ import { LoginResponse } from '../../domain/models/auth/login-response.model';
 })
 export class AuthRepository {
   // URL base da API (pode ser ajustada conforme ambiente)
-  private apiUrl = 'https://localhost:7104/api';
+  private apiUrl = 'http://localhost:5000/api';
 
   constructor(private http: HttpClient) {}
 

@@ -12,11 +12,6 @@ export const routes: Routes = [
         component: AdmFuncionariosComponent
       },
       {
-        path: '',  // Rota raiz, podendo apontar para outra página ou componente inicial
-        redirectTo: '/login',  // Redireciona para a página de login
-        pathMatch: 'full'  // Isso garante que só seja redirecionado para /login quando a rota for exatamente '/'
-      },
-      {
         path: '**',  // Caso não encontre nenhuma rota, redireciona para o login ou outra página
         redirectTo: '/login',
       },

@@ -161,7 +161,8 @@ export class FormFuncionarioComponent implements OnInit {
       if (this.data) {
         this.funcionarioRepository.update(this.data.id, funcionario).subscribe({
           next: () => {
-            this.snackBar.open('Funcionário atualizado com sucesso!', 'Fechar', { duration: 3000 });
+            this.snackBar.open('Funcionário atualizado com sucesso!', 'Fechar', { duration: 3000 ,   horizontalPosition: 'center', 
+              verticalPosition: 'top' });
             this.dialogRef.close(true);
           },
           error: (error) => {
@@ -175,7 +176,8 @@ export class FormFuncionarioComponent implements OnInit {
       } else {
         this.funcionarioRepository.create(funcionario).subscribe({
           next: () => {
-            this.snackBar.open('Funcionário cadastrado com sucesso!', 'Fechar', { duration: 3000 });
+            this.snackBar.open('Funcionário cadastrado com sucesso!', 'Fechar', { duration: 3000,  horizontalPosition: 'center', 
+              verticalPosition: 'top'  });
             this.userForm.reset();
             this.dialogRef.close(true);
           },

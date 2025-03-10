@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Projetos\\FuncInbev\\backend\\API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5DEE41CC-776C-461C-9265-0B1205293838}|FuncInbev.API\\FuncInbev.API.csproj|c:\\projetos\\funcinbev\\backend\\api\\funcinbev.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5DEE41CC-776C-461C-9265-0B1205293838}|FuncInbev.API\\FuncInbev.API.csproj|solutionrelative:funcinbev.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DEE41CC-776C-461C-9265-0B1205293838}|FuncInbev.API\\FuncInbev.API.csproj|c:\\projetos\\funcinbev\\backend\\api\\funcinbev.api\\funcinbev.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{5DEE41CC-776C-461C-9265-0B1205293838}|FuncInbev.API\\FuncInbev.API.csproj|solutionrelative:funcinbev.api\\funcinbev.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DEE41CC-776C-461C-9265-0B1205293838}|FuncInbev.API\\FuncInbev.API.csproj|c:\\projetos\\funcinbev\\backend\\api\\funcinbev.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5DEE41CC-776C-461C-9265-0B1205293838}|FuncInbev.API\\FuncInbev.API.csproj|solutionrelative:funcinbev.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DEE41CC-776C-461C-9265-0B1205293838}|FuncInbev.API\\FuncInbev.API.csproj|c:\\projetos\\funcinbev\\backend\\api\\funcinbev.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5DEE41CC-776C-461C-9265-0B1205293838}|FuncInbev.API\\FuncInbev.API.csproj|solutionrelative:funcinbev.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5DEE41CC-776C-461C-9265-0B1205293838}|FuncInbev.API\\FuncInbev.API.csproj|c:\\projetos\\funcinbev\\backend\\api\\funcinbev.api\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5DEE41CC-776C-461C-9265-0B1205293838}|FuncInbev.API\\FuncInbev.API.csproj|solutionrelative:funcinbev.api\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +58,58 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FuncInbev.API",
+              "DocumentMoniker": "C:\\Projetos\\FuncInbev\\backend\\API\\FuncInbev.API\\FuncInbev.API.csproj",
+              "RelativeDocumentMoniker": "FuncInbev.API\\FuncInbev.API.csproj",
+              "ToolTip": "C:\\Projetos\\FuncInbev\\backend\\API\\FuncInbev.API\\FuncInbev.API.csproj",
+              "RelativeToolTip": "FuncInbev.API\\FuncInbev.API.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-10T19:24:14.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Projetos\\FuncInbev\\backend\\API\\FuncInbev.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "FuncInbev.API\\appsettings.Development.json",
+              "ToolTip": "C:\\Projetos\\FuncInbev\\backend\\API\\FuncInbev.API\\appsettings.Development.json",
+              "RelativeToolTip": "FuncInbev.API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-10T19:06:53.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Projetos\\FuncInbev\\backend\\API\\FuncInbev.API\\appsettings.json",
+              "RelativeDocumentMoniker": "FuncInbev.API\\appsettings.json",
+              "ToolTip": "C:\\Projetos\\FuncInbev\\backend\\API\\FuncInbev.API\\appsettings.json",
+              "RelativeToolTip": "FuncInbev.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-10T19:06:45.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projetos\\FuncInbev\\backend\\API\\FuncInbev.API\\Program.cs",
+              "RelativeDocumentMoniker": "FuncInbev.API\\Program.cs",
+              "ToolTip": "C:\\Projetos\\FuncInbev\\backend\\API\\FuncInbev.API\\Program.cs",
+              "RelativeToolTip": "FuncInbev.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T17:57:15.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "GetAllFuncionariosQueryHandler.cs",
               "DocumentMoniker": "C:\\Projetos\\FuncInbev\\backend\\API\\FuncInbev.Application\\Services\\FuncionarioService\\Handlers\\GetAllFuncionariosQueryHandler.cs",
               "RelativeDocumentMoniker": "FuncInbev.Application\\Services\\FuncionarioService\\Handlers\\GetAllFuncionariosQueryHandler.cs",
@@ -50,12 +117,11 @@
               "RelativeToolTip": "FuncInbev.Application\\Services\\FuncionarioService\\Handlers\\GetAllFuncionariosQueryHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T02:45:28.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T02:45:28.629Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "UpdateFuncionarioHandler.cs",
               "DocumentMoniker": "C:\\Projetos\\FuncInbev\\backend\\API\\FuncInbev.Application\\Services\\FuncionarioService\\Handlers\\UpdateFuncionarioHandler.cs",
               "RelativeDocumentMoniker": "FuncInbev.Application\\Services\\FuncionarioService\\Handlers\\UpdateFuncionarioHandler.cs",
@@ -63,25 +129,23 @@
               "RelativeToolTip": "FuncInbev.Application\\Services\\FuncionarioService\\Handlers\\UpdateFuncionarioHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-10T02:40:20.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T02:40:20.985Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "FuncionarioController.cs",
               "DocumentMoniker": "C:\\Projetos\\FuncInbev\\backend\\API\\FuncInbev.API\\Controllers\\FuncionarioController.cs",
               "RelativeDocumentMoniker": "FuncInbev.API\\Controllers\\FuncionarioController.cs",
               "ToolTip": "C:\\Projetos\\FuncInbev\\backend\\API\\FuncInbev.API\\Controllers\\FuncionarioController.cs",
               "RelativeToolTip": "FuncInbev.API\\Controllers\\FuncionarioController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAtwFYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T21:38:52.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T21:38:52.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "CreateFuncionarioHandler.cs",
               "DocumentMoniker": "C:\\Projetos\\FuncInbev\\backend\\API\\FuncInbev.Application\\Services\\FuncionarioService\\Handlers\\CreateFuncionarioHandler.cs",
               "RelativeDocumentMoniker": "FuncInbev.Application\\Services\\FuncionarioService\\Handlers\\CreateFuncionarioHandler.cs",
@@ -89,12 +153,11 @@
               "RelativeToolTip": "FuncInbev.Application\\Services\\FuncionarioService\\Handlers\\CreateFuncionarioHandler.cs",
               "ViewState": "AgIAAEcAAAAAAAAAAAAWwFYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T21:56:09.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T21:56:09.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Funcionario.cs",
               "DocumentMoniker": "C:\\Projetos\\FuncInbev\\backend\\API\\FuncInbev.Domain\\Entities\\Funcionario.cs",
               "RelativeDocumentMoniker": "FuncInbev.Domain\\Entities\\Funcionario.cs",

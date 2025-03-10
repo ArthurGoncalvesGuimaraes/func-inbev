@@ -16,7 +16,7 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
+builder.WebHost.UseUrls("http://+:5000");
 // Adicionar configuração do banco de dados
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));

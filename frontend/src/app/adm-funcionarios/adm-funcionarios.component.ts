@@ -12,6 +12,7 @@ import { MatCard, MatCardModule } from '@angular/material/card';
 import { Funcionario } from '../../domain/models/funcionario/funcionario.model';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { FormFuncionarioComponent } from './form-funcionario/form-funcionario.component';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-adm-funcionarios',
   standalone: true,
@@ -36,7 +37,7 @@ export class AdmFuncionariosComponent implements OnInit {
   filteredFuncionarios: Funcionario[] = [];
   searchControl = new FormControl('');
   private dialog = inject(MatDialog);
-  constructor(private funcionarioRepository: FuncionarioRepository) {}
+  constructor(private funcionarioRepository: FuncionarioRepository, private router: Router) {}
 
   ngOnInit(): void {
     this.carregarFuncionarios();
@@ -109,5 +110,11 @@ export class AdmFuncionariosComponent implements OnInit {
       }
     });
   
+  }
+  logout(): void {
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    this.router.navigate(['/login']);
+
   }
 }

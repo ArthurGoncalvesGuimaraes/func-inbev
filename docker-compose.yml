@@ -6,14 +6,14 @@ services:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: mssql-container
     environment:
-      SA_PASSWORD: 'StrongPassw0rd!' #Obs: Incluir em um gerenciador de segredos como o Azure Key Vault e AWS Secrets Manager
+      SA_PASSWORD: 'StrongPassw0rd!' # Obs: Gerenciar com Azure Key Vault ou AWS Secrets Manager
       ACCEPT_EULA: "Y"
     ports:
       - "1433:1433"
     volumes:
       - mssql_data:/var/opt/mssql
     healthcheck:
-      test: [ "CMD-SHELL", "sqlcmd -S localhost -U sa -P 'StrongPassw0rd!' -Q 'SELECT 1'" ]
+      test: ["CMD-SHELL", "sqlcmd -S localhost -U sa -P 'StrongPassw0rd!' -Q 'SELECT 1'"]
       interval: 10s
       retries: 10
       start_period: 30s
@@ -24,14 +24,21 @@ services:
       context: backend/API # Path do Dockerfile
       dockerfile: FuncInbev.API/Dockerfile
     container_name: minha-api
-    depends_on:
-      mssql:
-        condition: service_healthy
     environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:5000
       - ConnectionStrings__DefaultConnection=Server=mssql,1433;Database=funcinbev;User Id=sa;Password=StrongPassw0rd!;TrustServerCertificate=True
     ports:
       - "5000:5000"
-      - "5001:5001"
+
+  # Frontend Angular
+  frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    container_name: frontend-app
+    ports:
+      - "4200:80"
 
 volumes:
   mssql_data:

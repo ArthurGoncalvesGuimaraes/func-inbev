@@ -11,11 +11,9 @@
                     <h2>Gestão de Funcionários</h2>
                     <mat-divider></mat-divider>
                     <div class="text-right" style="padding: 13px;">
-                     
-                        <button mat-flat-button color="primary" (click)="adicionarFuncionario()"><mat-icon>person_add</mat-icon> Adicionar  Funcionário</button>
+                      <a (click)="logout()" mat-button><mat-icon>logout</mat-icon> Trocar de Usuário</a>
 
-                        <a  mat-button href="/login"><mat-icon>logout</mat-icon> Trocar de Usuário</a>
-
+                      <button mat-flat-button color="primary" (click)="adicionarFuncionario()"><mat-icon>person_add</mat-icon> Adicionar  Funcionário</button>
                       </div>
 
                     <!-- Campo de Pesquisa -->
