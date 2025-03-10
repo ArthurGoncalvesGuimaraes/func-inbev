@@ -93,6 +93,8 @@ http://localhost:5000/swagger
 
 Para rodar o front-end do projeto, siga os passos:
 
+Antes de rodar o front-end, certifique-se de ter o Node.js instalado na versão 20.X.X ou superior.
+
 ```bash
 # Entrar na pasta do front-end
 cd frontend
