@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.text-right {
+    text-align: right; /* Alinha elementos inline à direita */
+  }
+  .mat-mdc-card-title{
+    color: #fff;
+    padding: 15px 2px !important;
+    font-size: 23px !important;
+    margin-bottom: 13px !important;
+    border-bottom: solid 1px;
+    width: 100%;
+  }
