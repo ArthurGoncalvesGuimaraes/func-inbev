@@ -1,0 +1,11 @@
+# Visual Studio files
+.vs/
+*.vsidx
+*.suo
+*.user
+*.vscode
+
+# Diretórios de build
+bin/
+obj/
+/backend/API/FuncInbev.API/appsettings.Development.json
