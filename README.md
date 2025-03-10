@@ -38,13 +38,23 @@ docker-compose up -d --build
 docker ps
 ```
 
-Se tudo estiver correto, você verá os containers **mssql-container** e **minha-api** rodando.
+Se tudo estiver correto, você verá os containers **mssql-container** , **minha-api** e **frontend-app** rodando.
 
 ### 🔹 **Parar os Containers**
 
 ```bash
 docker-compose down
 ```
+
+---
+## ⚙️ Rodar a aplicação
+
+Após rodar o Docker o aplicação estará disponível no link: http://localhost:4200
+
+Ao rodar  a aplicação, irá rodar o migratio , criando toda a estrutuda de banco de dados.
+Usuário padrão inicial da aplicação:
+  email :admin@funcinbev.com,
+  senha :Admin@123
 
 ---
 
