@@ -13,6 +13,7 @@ import { FuncionarioRepository } from '../../../data/funcionario/funcionario.rep
 import { MatSnackBar } from '@angular/material/snack-bar'; 
 import { MatSelectModule } from '@angular/material/select';
 import { Funcionario } from '../../../domain/models/funcionario/funcionario.model';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 
 @Component({
   selector: 'app-form-funcionario',
@@ -28,9 +29,11 @@ import { Funcionario } from '../../../domain/models/funcionario/funcionario.mode
     MatCardModule,
     MatIconModule,
     MatOptionModule,
-    MatSelectModule
+    MatSelectModule,
+    NgxMaskDirective  
     
   ],
+  providers: [provideNgxMask()],
   templateUrl: './form-funcionario.component.html',
   styleUrl: './form-funcionario.component.scss'
 })
@@ -155,9 +158,10 @@ export class FormFuncionarioComponent implements OnInit {
       const funcionario = { 
         ...this.userForm.value, 
         cargo: this.getEnumCargo(this.userForm.value.perfil) ,
-        id: this.data?.id ?? null
+        id: this.data?.id ?? null,
+        dataNascimento: this.formatarData(this.userForm.value.dataNascimento)
       };
-
+      console.log(funcionario);
       if (this.data) {
         this.funcionarioRepository.update(this.data.id, funcionario).subscribe({
           next: () => {
@@ -192,6 +196,26 @@ export class FormFuncionarioComponent implements OnInit {
       }
     }
   }
+
+  formatarData(data: any): string {
+    if (!data) return '';
+  
+    if (typeof data === 'string' && data.length === 8) {
+      // Se a data já está no formato 'DDMMYYYY', reformatamos para 'YYYY-MM-DD'
+      return `${data.substring(4, 8)}-${data.substring(2, 4)}-${data.substring(0, 2)}`;
+    }
+  
+    if (data instanceof Date) {
+      // Se já for um objeto Date, formatamos corretamente para 'YYYY-MM-DD'
+      const ano = data.getFullYear();
+      const mes = String(data.getMonth() + 1).padStart(2, '0'); // Mês começa do 0
+      const dia = String(data.getDate()).padStart(2, '0');
+      return `${ano}-${mes}-${dia}`;
+    }
+  
+    return data; // Caso não seja reconhecido, retorna o valor original
+  }
+  
 
   getEnumCargo(role: string): number {
     const roleMap: { [key: string]: number } = {

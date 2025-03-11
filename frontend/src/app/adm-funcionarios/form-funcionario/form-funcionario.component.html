@@ -32,9 +32,7 @@
           <!-- Data de Nascimento -->
           <mat-form-field class="col-6">
             <mat-label>Data de Nascimento</mat-label>
-            <input matInput [matDatepicker]="picker" formControlName="dataNascimento" required />
-            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-            <mat-datepicker #picker></mat-datepicker>
+            <input matInput  formControlName="dataNascimento" required   mask="00/00/0000" placeholder="00/00/0000"/>
             <mat-error *ngIf="userForm.get('dataNascimento')?.hasError('required')">Data de nascimento é obrigatória</mat-error>
             <mat-error *ngIf="userForm.get('dataNascimento')?.hasError('menorDeIdade')">Você precisa ser maior de idade</mat-error>
           </mat-form-field>
@@ -62,7 +60,7 @@
           <div>
             <mat-form-field class="full-width">
               <mat-label>Telefone {{i + 1}}</mat-label>
-              <input matInput [formControlName]="i" required />
+              <input matInput [formControlName]="i" required  mask="(00) 00000-0000" placeholder="(00) 00000-0000"/>
               <mat-error *ngIf="tel.hasError('required')">Telefone é obrigatório</mat-error>
           </mat-form-field>
           </div>

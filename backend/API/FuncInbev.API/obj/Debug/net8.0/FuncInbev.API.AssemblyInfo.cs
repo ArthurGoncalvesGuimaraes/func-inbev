@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FuncInbev.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+211ca0979324675350b84aa14ecf5625fa66efb8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2602cdf9ea26b234231ce96432fdcdcefbf6dc3")]
 [assembly: System.Reflection.AssemblyProductAttribute("FuncInbev.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FuncInbev.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
