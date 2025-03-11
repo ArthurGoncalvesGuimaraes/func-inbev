@@ -4,6 +4,20 @@ Bem-vindo ao repositório do projeto **FuncInbev**! Este documento fornece instr
 
 ---
 
+# FuncInbev - Testes🏗️🚀
+
+Para realizar o teste é disponibilizado um usuário padrão com nível de administrador:
+  email: admin@funcinbev.com
+  senha: Admin@123"
+
+1- Cadastre um novo Funcionário e guarde a senha desse usuário, selecione o perfil: Líder
+2- Faça o login com esse Funcionário recem cadastrado e faça um cadastro de um novo funcionário
+  Obs: Irá aparecer apenas os níveis disponíveis de acordo com o perfil do usuário logado.
+  Para aplicar essa regra de negócio:
+  -Não é permitido criar um usuário com permissões maiores do que as do usuário atual. Em outras palavras, um funcionário não pode criar um líder, e um líder não pode criar um diretor.
+
+---
+
 ## 📥 Clonar o Repositório
 
 Para obter uma cópia local do projeto, abra o terminal e execute:
