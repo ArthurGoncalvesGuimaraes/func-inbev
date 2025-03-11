@@ -16,7 +16,9 @@ Para realizar o teste é disponibilizado um usuário padrão com nível de admin
 
 
   Obs: Irá aparecer apenas os níveis disponíveis de acordo com o perfil do usuário logado.
+  
   Para aplicar essa regra de negócio:
+  
   -Não é permitido criar um usuário com permissões maiores do que as do usuário atual. Em outras palavras, um funcionário não pode criar um líder, e um líder não pode criar um diretor.
 
 ---
